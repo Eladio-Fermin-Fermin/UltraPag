@@ -29,7 +29,7 @@ document.addEventListener('click', e => {
         })
     }
 })
-document.addEventListener('mouseover', e => {
+document.addEventListener('click', e => {
     
     if (e.target == btnNo) {
         sound.play();
@@ -41,18 +41,18 @@ document.addEventListener('mouseover', e => {
 let left1 = 0, left2 = 0, top1 = 0, top2 = 0;
 
 let numeroRandon = (x1, x2, direccion) => {
-    let nRamdom = Math.floor(Math.random() * (+92 + 1 - +0)) + +0;
+    let nRamdom = Math.floor(Math.random() * (+42 + 1 - +0)) + +0;
     x1 = nRamdom;
 
     if ((x1 - x2) <= 10 && (x1 - x2) >= 0) {
-        if ((x1 + 10) > 92) {
+        if ((x1 + 10) > 42) {
             x1 -= 8;
         } else {
             x1 += 8;
         }
     }
     if ((x1 - x2) >= -10 && (x1 - x2) <= 0) {
-        if ((x1 + 20) > 92) {
+        if ((x1 + 20) > 42) {
             x1 -= 20;
         } else {
             x1 += 20;
